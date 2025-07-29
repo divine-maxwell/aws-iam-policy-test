@@ -1,3 +1,13 @@
+# Beginner IAM Project – AWS IAM Group Policy with Least Privilege Enforcement
+
+✅ Created a group called "Testers"  
+✅ Attached the AmazonS3ReadOnlyAccess policy  
+✅ Tested with two users to verify read-only S3 access  
+✅ Verified policy blocks upload/delete actions  
+
+**Tech Used:** AWS IAM, S3, Managed Policies  
+**Skills:** Identity-based access control, Least Privilege, IAM Group Permissions  
+
 # IAM Group Policy Assignment & Least Privilege Enforcement
 
 ## 🔐 Project Description
