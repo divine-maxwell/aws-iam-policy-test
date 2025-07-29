@@ -16,6 +16,22 @@ This beginner AWS IAM project demonstrates how to assign group-based permissions
 4. Logged in as one of the users and tested:
    - ✅ View S3 buckets
    - ❌ Attempt to upload or delete — blocked (as expected)
+## 📸 Screenshots
+
+### 1. IAM Group Creation
+![IAM Group](screenshots/s3-access-group.jpg)
+
+### 2. Users Added to Group
+![Users Added](screenshots/s3-users.JPEG)
+
+### 3. Permissions Attached
+![Permissions](screenshots/s3-permissions.JPEG)
+
+### 4. S3 Access Test (Success)
+![S3 Access Granted](screenshots/s3-access-granted.JPG)
+
+### 5. S3 Access Test (Denied)
+![S3 Access Denied](screenshots/s3-access-denied.jpg)
 
 ## 🔍 Test Results
 
