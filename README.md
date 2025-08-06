@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Beginner IAM Project – AWS IAM Group Policy with Least Privilege Enforcement
 
 ✅ Created a group called "Testers"  
@@ -9,55 +10,84 @@
 **Skills:** Identity-based access control, Least Privilege, IAM Group Permissions  
 
 # IAM Group Policy Assignment & Least Privilege Enforcement
+=======
+# 🛡️ AWS IAM Policy Test Project
+>>>>>>> 65a4388 (Updated README with screenshot table and added images)
 
-## 🔐 Project Description
-This beginner AWS IAM project demonstrates how to assign group-based permissions using IAM policies, and how to validate the principle of Least Privilege through hands-on testing. The goal was to ensure that users could only perform actions explicitly allowed — no more, no less.
+## 📌 Project Overview
+This project demonstrates how to assign group-based permissions using IAM policies and verify **Least Privilege** through hands-on testing.  
+The goal was to ensure IAM users only perform actions they’re explicitly allowed to—nothing more, nothing less.
 
-## 🛠️ Tools Used
-- AWS IAM Console
-- IAM Policy: `AmazonS3ReadOnlyAccess`
-- GitHub (for documentation)
-- IAM user login test (via browser)
+---
 
-## ✅ What I Did
-1. Created a group named `Testers`
-2. Attached the AWS-managed policy `AmazonS3ReadOnlyAccess`
-3. Added IAM users (`Tomiwa.Addict`, `IsraelOriade`) to the group
-4. Logged in as one of the users and tested:
-   - ✅ View S3 buckets
-   - ❌ Attempt to upload or delete — blocked (as expected)
-## 📸 Screenshots
+## 🛠️ What I Did
+1. Created a group named `Testers`.
+2. Attached the managed policy `AmazonS3ReadOnlyAccess`.
+3. Added IAM users (`Tomiwa.Addict`, `Israel.Grade`) to the group.
+4. Logged in as each user and tested access to Amazon S3:
+   - ✅ Able to **view and list S3 buckets**
+   - ❌ Unable to **upload or delete files**
 
-### 1. IAM Group Creation
-![IAM Group](screenshots/s3-access-group.jpg)
+---
 
-### 2. Users Added to Group
-![Users Added](screenshots/s3-users.JPEG)
+## 🧪 Test Results
 
-### 3. Permissions Attached
-![Permissions](screenshots/s3-permissions.JPEG)
+| Action Tested                  | Result        | Screenshot |
+|-------------------------------|---------------|------------|
+| View S3 Buckets               | ✅ Success     | [📸 View Screenshot](./screenshots/s3-readonly-access.png) |
+| Upload/Delete Files           | ❌ Denied      | [📸 View Screenshot](./screenshots/s3-access-denied01.png) |
+| IAM Group Creation            | ✅ Done        | [📸 View Screenshot](./screenshots/s3-user-groups01.png) |
+| IAM User Listing              | ✅ Done        | [📸 View Screenshot](./screenshots/s3-users.JPEG) |
+| Bucket Test File              | ✅ Visible     | [📸 View Screenshot](./screenshots/s3-testfile.png) |
+| S3 Bucket Itself              | ✅ Accessible  | [📸 View Screenshot](./screenshots/s3-bucket.png) |
 
-### 4. S3 Access Test (Success)
-![S3 Access Granted](screenshots/s3-access-granted.JPG)
+---
 
-### 5. S3 Access Test (Denied)
-![S3 Access Denied](screenshots/s3-access-denied.jpg)
+## 🖼️ Screenshot Previews
 
-## 🔍 Test Results
+Below are direct clickable thumbnail previews of key screenshots:
 
-### ✅ Successful Action
-User could access and view S3 buckets:
-![S3 Access Success](screenshots/s3-access-granted.png)
+| Action | Preview |
+|--------|---------|
+| IAM Group Setup | [<img src="./screenshots/s3-user-groups01.png" width="200"/>](./screenshots/s3-user-groups01.png) |
+| S3 Bucket Access | [<img src="./screenshots/s3-bucket.png" width="200"/>](./screenshots/s3-bucket.png) |
+| Read-Only Access | [<img src="./screenshots/s3-readonly-access.png" width="200"/>](./screenshots/s3-readonly-access.png) |
+| Access Denied (Upload) | [<img src="./screenshots/s3-access-denied01.png" width="200"/>](./screenshots/s3-access-denied01.png) |
+| Users in Group | [<img src="./screenshots/s3-users.JPEG" width="200"/>](./screenshots/s3-users.JPEG) |
+| Test File View | [<img src="./screenshots/s3-testfile.png" width="200"/>](./screenshots/s3-testfile.png) |
 
-### ❌ Denied Action
-User was blocked from uploading/deleting files:
-![S3 Access Denied](screenshots/s3-access-denied.png)
+---
 
-## 🔒 Security Concepts Practiced
-- IAM group-based permission assignment
-- Managed policies vs inline
-- Least Privilege enforcement
-- Identity-based access control
+## 🧰 Tools & Services Used
+- AWS IAM (Users, Groups, Policies)
+- Amazon S3 (for access testing)
+- AWS Console
+- IAM Managed Policy: `AmazonS3ReadOnlyAccess`
+
+---
+
+## 🔐 Security Concepts Practiced
+- IAM Group-based permission assignment  
+- Managed policy attachment  
+- Access testing (allowed vs denied)  
+- **Principle of Least Privilege**  
+- Identity-based access control (IBAC)
+
+---
 
 ## 📁 Project Structure
 
+aws-iam-policy-test/
+├── README.md
+├── screenshots/
+│ ├── s3-access-denied01.png
+│ ├── s3-bucket.png
+│ ├── s3-readonly-access.png
+│ ├── s3-testfile.png
+│ ├── s3-user-groups01.png
+│ └── s3-users.JPEG
+
+
+---
+
+✅ **This project highlights my practical understanding of IAM security controls and least privilege enforcement in AWS.**
